@@ -9,14 +9,23 @@ gem 'rails', '4.0.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+	
+	# Use SCSS for stylesheets
+	gem 'sass-rails', '~> 4.0.0'
+	
+	# Use CoffeeScript for .js.coffee assets and views
+	gem 'coffee-rails', '~> 4.0.0'
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
+	# Bootstrap
+	gem 'twitter-bootstrap-rails'
 
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+	# Use Uglifier as compressor for JavaScript assets
+	gem 'uglifier', '>= 1.3.0'
+
+end # group:assets
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -37,6 +46,9 @@ end
 
 # Rails 4 tweak for Heroku
 gem 'rails_12factor', group: :production
+
+# Bootstrap
+gem 'twitter-bootstrap-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
