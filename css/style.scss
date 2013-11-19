@@ -1,0 +1,50 @@
+/****** CSS Reset ******/
+* {margin: 0; padding: 0; box-sizing: border-box; }
+a {text-decoration: none;}
+ul {list-style-type: none;}
+article, aside, figure, footer, header, nav, section {display: block;}
+
+/****** Colors ******/
+$beakOrange: #ff8a1f;
+$duck:#fcef77;
+
+/****** Main ******/
+
+body  {font-family: "adobe-caslon-pro";}
+
+section p  {
+	margin:1em;
+}
+
+.welcome  {
+	padding-top: 2em;
+}
+
+.welcome img  {
+	display:block;
+	width: 883px;
+	margin:auto;
+}
+
+
+
+.makeway, .comingSoon {font-family: "sketchnote-square";text-align:center;}
+
+.makeway  {font-size: 98px;}
+
+.comingSoon {font-size: 48px; line-height: 56px;color:$beakOrange;}
+
+/****** Media Queries ******/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px)  {
+	section.about {
+		display:block;
+		max-width:720px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+
+}
+
