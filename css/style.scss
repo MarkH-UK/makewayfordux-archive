@@ -6,11 +6,36 @@ article, aside, figure, footer, header, nav, section {display: block;}
 
 /****** Colors ******/
 $beakOrange: #ff8a1f;
+$duxGreen: #329634;
 $duck:#fcef77;
+
+/****** Pure CSS Fonts ******/
+body,
+.pure-g [class *= "pure-u"],
+.pure-g-r [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: "adobe-caslon-pro", Georgia, Times, "Times New Roman", serif;
+}
 
 /****** Main ******/
 
-body  {font-family: "adobe-caslon-pro";}
+h1 {
+	font-family: "sketchnote-square";
+	color:$beakOrange;
+	padding:0 2em;
+}
+
+hr {
+	margin:7em 3em;
+}
+
+section {
+	padding-top: 10px; // Keeps nav from covering up headings in mobile using pagescroller
+}
+
+section#top  {
+	padding-top: 100px;  // Keeps nav from covering up top image in mobile using pagescroller
+}
 
 section p  {
 	margin:1em;
@@ -26,21 +51,46 @@ section p  {
 	margin:auto;
 }
 
+.makeway, .comingSoon {font-family: "sketchnote-square";}
 
-
-.makeway, .comingSoon {font-family: "sketchnote-square";text-align:center;}
-
-.makeway  {font-size: 98px;}
+.makeway  {font-size: 48px;color:$beakOrange;}
 
 .comingSoon {font-size: 48px; line-height: 56px;color:$beakOrange;}
+
+/****** Nav ******/
+nav {
+	padding:0.5em;
+	position: fixed;
+}
+
+.pure-menu .pure-menu-heading {
+	color: $duxGreen;
+	padding-left:15%;
+}
+
+
+nav.pure-menu ul {
+	float:right;
+	padding-right:15%;
+}
+
 
 /****** Media Queries ******/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)  {
-	section.about {
+
+	section {
+		padding-top: 0px; // Resets default. Set above to keep nav from covering up headings in mobile using pagescroller
+	}
+
+	section#top  {
+		padding-top: 70px;  // Keeps nav from covering up top image in mobile using pagescroller
+	}
+	
+	#content section {
 		display:block;
-		max-width:720px;
+		max-width:960px;
 		margin-left:auto;
 		margin-right:auto;
 	}

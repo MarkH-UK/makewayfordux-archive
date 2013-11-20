@@ -14,9 +14,27 @@ article, aside, figure, footer, header, nav, section {
   display: block; }
 
 /****** Colors ******/
+/****** Pure CSS Fonts ******/
+body,
+.pure-g [class*="pure-u"],
+.pure-g-r [class*="pure-u"] {
+  /* Set your content font stack here: */
+  font-family: "adobe-caslon-pro", Georgia, Times, "Times New Roman", serif; }
+
 /****** Main ******/
-body {
-  font-family: "adobe-caslon-pro"; }
+h1 {
+  font-family: "sketchnote-square";
+  color: #ff8a1f;
+  padding: 0 2em; }
+
+hr {
+  margin: 7em 3em; }
+
+section {
+  padding-top: 10px; }
+
+section#top {
+  padding-top: 100px; }
 
 section p {
   margin: 1em; }
@@ -30,22 +48,41 @@ section p {
   margin: auto; }
 
 .makeway, .comingSoon {
-  font-family: "sketchnote-square";
-  text-align: center; }
+  font-family: "sketchnote-square"; }
 
 .makeway {
-  font-size: 98px; }
+  font-size: 48px;
+  color: #ff8a1f; }
 
 .comingSoon {
   font-size: 48px;
   line-height: 56px;
   color: #ff8a1f; }
 
+/****** Nav ******/
+nav {
+  padding: 0.5em;
+  position: fixed; }
+
+.pure-menu .pure-menu-heading {
+  color: #329634;
+  padding-left: 15%; }
+
+nav.pure-menu ul {
+  float: right;
+  padding-right: 15%; }
+
 /****** Media Queries ******/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  section.about {
+  section {
+    padding-top: 0px; }
+
+  section#top {
+    padding-top: 70px; }
+
+  #content section {
     display: block;
-    max-width: 720px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto; } }
