@@ -2,7 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] == 'POST'):
 
 	// If the post global variable is set, sanitize it and assign it to a variable	
-	if (isset($_POST['name'])) { $first_name = filter_var($_POST['first-name'],  FILTER_SANITIZE_STRING, FILTER_SANITIZE_FULL_SPECIAL_CHARS ); } else { $first_name = ''; }
+	if (isset($_POST['name'])) { $name = filter_var($_POST['name'],  FILTER_SANITIZE_STRING, FILTER_SANITIZE_FULL_SPECIAL_CHARS ); } else { $name = ''; }
 	if (isset($_POST['email'])) { $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL ); } else { $email = ''; }
 	if (isset($_POST['message'])) { $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING, FILTER_SANITIZE_FULL_SPECIAL_CHARS ); } else { $message = ''; }
 
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'):
 		// Send email to luke for dev
 		$to 			=	"lukejayhatfield@gmail.com";
 		$subject 	=	"Sidewalk Committee Website Inquiry ($name)";
-		$message 	= "Sidewalk Committee Inquiry\r\n\r\n\r\n\r\nName:     $name\r\n\r\n" .
+		$message 	= "Sidewalk Committee Inquiry\r\n\r\n\r\n\r\nName:     $name\r\n\r\nEmail:     $email\r\n\r\n" .
 								"Message: $message\r\n\r\n";
 
 		$headers 	= "From: inquiry@makewayfordux.org" . "\r\n" .
