@@ -28,7 +28,7 @@ h1 {
   padding: 0 2em; }
 
 hr {
-  margin: 7em 3em; }
+  margin: 5em 3em; }
 
 section {
   padding-top: 10px; }
@@ -36,7 +36,7 @@ section {
 section#top {
   padding-top: 100px; }
 
-section p {
+section p, footer p {
   margin: 1em; }
 
 .welcome {
@@ -72,6 +72,17 @@ nav.pure-menu ul {
   float: right;
   padding-right: 15%; }
 
+/****** Contact ******/
+form {
+  padding: 1em; }
+
+/****** Footer ******/
+footer {
+  margin-bottom: 2em; }
+
+footer ul {
+  float: right; }
+
 /****** Media Queries ******/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -79,9 +90,9 @@ nav.pure-menu ul {
     padding-top: 0px; }
 
   section#top {
-    padding-top: 70px; }
+    padding-top: 100px; }
 
-  #content section {
+  #content section, #content footer {
     display: block;
     max-width: 960px;
     margin-left: auto;

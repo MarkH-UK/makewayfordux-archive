@@ -26,7 +26,7 @@ h1 {
 }
 
 hr {
-	margin:7em 3em;
+	margin:5em 3em;
 }
 
 section {
@@ -37,7 +37,7 @@ section#top  {
 	padding-top: 100px;  // Keeps nav from covering up top image in mobile using pagescroller
 }
 
-section p  {
+section p, footer p  {
 	margin:1em;
 }
 
@@ -74,6 +74,23 @@ nav.pure-menu ul {
 	padding-right:15%;
 }
 
+/****** Contact ******/
+
+form {
+	padding: 1em;
+}
+
+
+/****** Footer ******/
+
+footer {
+	margin-bottom:2em;
+}
+
+footer ul {
+	float:right;
+}
+
 
 /****** Media Queries ******/
 
@@ -85,10 +102,10 @@ nav.pure-menu ul {
 	}
 
 	section#top  {
-		padding-top: 70px;  // Keeps nav from covering up top image in mobile using pagescroller
+		padding-top: 100px;  // Keeps nav from covering up top image in mobile using pagescroller
 	}
 	
-	#content section {
+	#content section, #content footer {
 		display:block;
 		max-width:960px;
 		margin-left:auto;
