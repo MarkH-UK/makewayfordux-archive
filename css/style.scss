@@ -1,7 +1,7 @@
 /****** CSS Reset ******/
 * {margin: 0; padding: 0; box-sizing: border-box; }
 a {text-decoration: none;}
-ul {list-style-type: none;}
+nav ul {list-style-type: none;}
 article, aside, figure, footer, header, nav, section {display: block;}
 
 /****** Colors ******/
@@ -9,7 +9,7 @@ $beakOrange: #ff8a1f;
 $duxGreen: #329634;
 $duck:#fcef77;
 
-/****** Pure CSS Fonts ******/
+/****** Pure CSS ******/
 body,
 .pure-g [class *= "pure-u"],
 .pure-g-r [class *= "pure-u"] {
@@ -17,16 +17,19 @@ body,
     font-family: "adobe-caslon-pro", Georgia, Times, "Times New Roman", serif;
 }
 
+.pure-g-r > div, .pure-g-r h1 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /****** Main ******/
 
 h1 {
-	font-family: "sketchnote-square";
+	font-family: "sketchnote-square" !important;
 	color:$beakOrange;
-	padding:0 2em;
-}
-
-hr {
-	margin:5em 3em;
+	padding:0 1em;
+	text-align:center;
 }
 
 section {
@@ -37,25 +40,15 @@ section#top  {
 	padding-top: 100px;  // Keeps nav from covering up top image in mobile using pagescroller
 }
 
-section p, footer p  {
+section p, footer {
 	margin:1em;
 }
 
-.welcome  {
-	padding-top: 2em;
-}
+//.makeway, .comingSoon {font-family: "sketchnote-square";}
 
-.welcome img  {
-	display:block;
-	width: 883px;
-	margin:auto;
-}
+//.makeway  {font-size: 48px;color:$beakOrange;}
 
-.makeway, .comingSoon {font-family: "sketchnote-square";}
-
-.makeway  {font-size: 48px;color:$beakOrange;}
-
-.comingSoon {font-size: 48px; line-height: 56px;color:$beakOrange;}
+//.comingSoon {font-size: 48px; line-height: 56px;color:$beakOrange;}
 
 /****** Nav ******/
 nav {
@@ -74,10 +67,39 @@ nav.pure-menu ul {
 	padding-right:15%;
 }
 
+/****** Welcome ******/
+
+.welcome  {
+	padding-top: 2em;
+	width:70%;
+
+	p {
+		text-indent: 1em;
+	}
+
+	img  {
+		display:block;
+		width: 883px;
+		margin:auto;
+	}
+}
+
+/****** About ******/
+#about{
+	//p, ul {padding-left:200px;}
+}
+
+/****** blog ******/
+#blog{
+	//p, ul {padding-left:20px;}
+}
+
 /****** Contact ******/
 
 form {
-	padding: 1em;
+	position:relative;
+	left:20px;
+	top:10px;
 }
 
 
@@ -97,6 +119,14 @@ footer ul {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px)  {
 
+	h1 {
+		font-size:3em;
+	}
+
+	hr {
+		margin:5em 3em;
+	}
+
 	section {
 		padding-top: 0px; // Resets default. Set above to keep nav from covering up headings in mobile using pagescroller
 	}
@@ -111,7 +141,27 @@ footer ul {
 		margin-left:auto;
 		margin-right:auto;
 	}
+
+	.mission, .history, .blog, .members {
+		padding-top:1em;
+	}
+
+	.form {
+		padding-top:3em;
+	}
 	
+	.welcome {
+		h1 {
+			font-size: 5em;
+		}
+		p {
+			text-indent: 4em;
+		}
+	}
+
+	form {
+		left:-70px;
+	}
 
 }
 

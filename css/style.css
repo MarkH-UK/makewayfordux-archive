@@ -7,28 +7,31 @@
 a {
   text-decoration: none; }
 
-ul {
+nav ul {
   list-style-type: none; }
 
 article, aside, figure, footer, header, nav, section {
   display: block; }
 
 /****** Colors ******/
-/****** Pure CSS Fonts ******/
+/****** Pure CSS ******/
 body,
 .pure-g [class*="pure-u"],
 .pure-g-r [class*="pure-u"] {
   /* Set your content font stack here: */
   font-family: "adobe-caslon-pro", Georgia, Times, "Times New Roman", serif; }
 
+.pure-g-r > div, .pure-g-r h1 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 /****** Main ******/
 h1 {
-  font-family: "sketchnote-square";
+  font-family: "sketchnote-square" !important;
   color: #ff8a1f;
-  padding: 0 2em; }
-
-hr {
-  margin: 5em 3em; }
+  padding: 0 1em;
+  text-align: center; }
 
 section {
   padding-top: 10px; }
@@ -36,28 +39,8 @@ section {
 section#top {
   padding-top: 100px; }
 
-section p, footer p {
+section p, footer {
   margin: 1em; }
-
-.welcome {
-  padding-top: 2em; }
-
-.welcome img {
-  display: block;
-  width: 883px;
-  margin: auto; }
-
-.makeway, .comingSoon {
-  font-family: "sketchnote-square"; }
-
-.makeway {
-  font-size: 48px;
-  color: #ff8a1f; }
-
-.comingSoon {
-  font-size: 48px;
-  line-height: 56px;
-  color: #ff8a1f; }
 
 /****** Nav ******/
 nav {
@@ -72,9 +55,24 @@ nav.pure-menu ul {
   float: right;
   padding-right: 15%; }
 
+/****** Welcome ******/
+.welcome {
+  padding-top: 2em;
+  width: 70%; }
+  .welcome p {
+    text-indent: 1em; }
+  .welcome img {
+    display: block;
+    width: 883px;
+    margin: auto; }
+
+/****** About ******/
+/****** blog ******/
 /****** Contact ******/
 form {
-  padding: 1em; }
+  position: relative;
+  left: 20px;
+  top: 10px; }
 
 /****** Footer ******/
 footer {
@@ -86,6 +84,12 @@ footer ul {
 /****** Media Queries ******/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  h1 {
+    font-size: 3em; }
+
+  hr {
+    margin: 5em 3em; }
+
   section {
     padding-top: 0px; }
 
@@ -96,4 +100,18 @@ footer ul {
     display: block;
     max-width: 960px;
     margin-left: auto;
-    margin-right: auto; } }
+    margin-right: auto; }
+
+  .mission, .history, .blog, .members {
+    padding-top: 1em; }
+
+  .form {
+    padding-top: 3em; }
+
+  .welcome h1 {
+    font-size: 5em; }
+  .welcome p {
+    text-indent: 4em; }
+
+  form {
+    left: -70px; } }
