@@ -1,0 +1,91 @@
+/*! responsive-nav.js 1.0.25 by @viljamis */
+
+.nav-collapse {
+  clear: both;
+}
+
+.nav-collapse ul {
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.nav-collapse li {
+  width: 100%;
+  display: block;
+  background-color: $duxGreen;
+
+  a {
+    color: white;
+    border-bottom: .2em solid white;
+    //text-transform: uppercase;
+    font-size: 1.3em;
+  }
+  
+}
+
+.nav-collapse li:last-child{
+  border: none;
+  a {
+    border: none;
+  }
+}
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav-collapse.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative;
+    clear: none;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-collapse ul {
+    margin-top: 10px;
+
+    li {
+      width: auto;
+      background-color: white;
+
+      a {
+        color: $gray;
+        border-bottom: none;
+        font-size: .9em;
+      }
+    }
+  }
+}
