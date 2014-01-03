@@ -760,7 +760,7 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 body {
-  font-family: "Georgia", Cambria, Times New Roman, Times, serif;
+  font-family: "adobe-caslon-pro", "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
   line-height: 1.5;
   color: #565656; }
@@ -808,19 +808,19 @@ style a page via class
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  width: 96%;
+  width: 90%;
   margin: 0 auto; }
 
 /*********************
 LINK STYLES
 *********************/
 a, a:visited {
-  color: #f01d4f;
+  color: #329634;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: #d10e3c; }
+    color: #329634; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -931,13 +931,18 @@ TOP SECTION
 *********************/
 #top {
   width: 100%; }
-
-#top img {
-  display: block;
-  width: 883px;
-  height: auto;
-  max-width: 100%;
-  margin: 0 auto; }
+  #top img {
+    display: block;
+    width: 883px;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto; }
+  #top div {
+    margin: auto; }
+  #top span {
+    font-size: 2em; }
+  #top p {
+    display: inline; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1238,6 +1243,12 @@ tweeners.
   
   ******************************************************************/
   /*********************
+  GENERAL STYLES
+  *********************/
+  hr {
+    margin: 3em 0; }
+
+  /*********************
   NAVIGATION STYLES
   *********************/
   .nav li {
@@ -1285,6 +1296,12 @@ tweeners.
   /*********************
   FOOTER STYLES
   *********************/
+  footer address {
+    float: left; }
+
+  footer ul {
+    float: right; }
+
   /*
   check your menus here. do they look good?
   do they need tweaking?
@@ -1394,15 +1411,25 @@ you can add resource intensive styles.
   /*********************
   GENERAL STYLES
   *********************/
+  h2 {
+    float: right;
+    margin-right: 2em; }
+
   /*********************
   LAYOUT & GRID STYLES
   *********************/
   .wrap {
-    max-width: 1140px; }
+    max-width: 960px; }
 
   /*********************
   HEADER STYLES
   *********************/
+  /*********************
+  HOME PAGE
+  *********************/
+  .sub-content {
+    margin-top: 1em; }
+
   /*********************
   NAVIGATION STYLES
   *********************/

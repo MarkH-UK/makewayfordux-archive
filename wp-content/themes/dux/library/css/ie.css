@@ -315,6 +315,12 @@ upon your base.scss styles.
 
 ******************************************************************/
 /*********************
+GENERAL STYLES
+*********************/
+hr {
+  margin: 3em 0; }
+
+/*********************
 NAVIGATION STYLES
 *********************/
 .nav li {
@@ -362,6 +368,12 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
+footer address {
+  float: left; }
+
+footer ul {
+  float: right; }
+
 /*
 check your menus here. do they look good?
 do they need tweaking?
@@ -383,15 +395,25 @@ come into play. Have fun!
 /*********************
 GENERAL STYLES
 *********************/
+h2 {
+  float: right;
+  margin-right: 2em; }
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 .wrap {
-  max-width: 1140px; }
+  max-width: 960px; }
 
 /*********************
 HEADER STYLES
 *********************/
+/*********************
+HOME PAGE
+*********************/
+.sub-content {
+  margin-top: 1em; }
+
 /*********************
 NAVIGATION STYLES
 *********************/

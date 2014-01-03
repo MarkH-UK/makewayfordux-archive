@@ -10,15 +10,41 @@ Template Name: Home Page
 
 				<div id="inner-content" class="wrap clearfix">
 
-						<div id="main" class="twelvecol first clearfix" role="main">
+						<div id="main" class="twelvecol clearfix" role="main">
 
-							<section id="top" class="">
+							<section id="top" >
 								<img id="duxFamily" src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/ducksColor.png" alt="Ducks on bikes" width="883" height="372">
-								<h1>Make Way for Dux!</h1>
-								<p>  We are dedicated to connecting and improving the lives of people in town by putting forward designs and plans for sidewalks and bike paths. We believe more safe places to walk, run, stroll, and cycle will add to the health, safety, and enjoyment of our community.</p>
+								<div class="into">
+									<span><?php the_field('title') ?></span>
+									<?php the_field('intro') ?>
+								</div>
 							</section>
+							
 							<hr>
 
+							<section id="about" class="clearfix">
+								<div class="twelvecol">
+									<?php while(has_sub_field('about_section')): ?>
+										<div class="threecol first">
+											<h2><?php the_sub_field('title') ?></h2>
+										</div>
+										<div class="sub-content ninecol">
+											<?php the_sub_field('content') ?>
+										</div>
+									<?php endwhile; ?>
+								</div>
+							</section>
+							
+							<hr>
+
+							<section id="blog" class="pure-u section">
+								<div class="pure-g-r">
+									<h1 class="pure-u-1-3">Blog</h1>
+									<div class="blog pure-u-2-3">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, quae, dolor, placeat, itaque ipsa repellendus alias enim similique accusantium velit minus ex quis animi nam doloremque! Quae dolor suscipit deserunt?</p>
+									</div>
+								</div>
+							</section>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -38,13 +64,6 @@ Template Name: Home Page
 									<?php the_content(); ?>
 								</section>
 
-								<footer class="article-footer">
-									<p class="clearfix"><?php the_tags( '<span class="tags">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '' ); ?></p>
-
-								</footer>
-
-								<?php comments_template(); ?>
-
 							</article>
 
 							<?php endwhile; else : ?>
@@ -63,8 +82,17 @@ Template Name: Home Page
 
 							<?php endif; ?>
 
-						</div>
+							<hr>
+							<section id="contact" class="pure-u section">
+								<div class="pure-g-r">
+									<h1 class="pure-u-1-3">Contact</h1>
+									<div class="form pure-u-2-3">
+										Contact form here...
+									</div>
+								</div>
+							</section>
 
+						</div> <!-- /.main -->
 						
 				</div>
 

@@ -19,12 +19,17 @@ GENERAL STYLES
 
 body {}
 
+h2 {
+	float: right;
+	margin-right: 2em;
+}
+
 /*********************
 LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	max-width: 1140px;
+	max-width: 960px;
 }
 
 /*********************
@@ -34,6 +39,15 @@ HEADER STYLES
 .header {}
 
 	#logo {}
+
+/*********************
+HOME PAGE
+*********************/
+
+.sub-content {
+	margin-top: 1em;
+}
+
 
 /*********************
 NAVIGATION STYLES

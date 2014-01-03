@@ -68,7 +68,7 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 96%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -77,11 +77,11 @@ LINK STYLES
 *********************/
 
 a, a:visited {
-	color: $link-color;
+	color: $duxGreen;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: $link-hover;
+		color: $duxGreen;
 	}
 
 	/* on click */
@@ -261,14 +261,27 @@ TOP SECTION
 *********************/
 #top {
 	width: 100%;
-}
 
-#top img {
-	display: block;
-	width: 883px;
-	height: auto;
-	max-width: 100%;
-	margin: 0 auto;
+	img {
+		display: block;
+		width: 883px;
+		height: auto;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
+	div {
+		//max-width: 80%;
+		margin: auto;
+	}
+
+	span {
+		font-size: 2em;
+	}
+
+	p {
+		display: inline;
+	}
 }
 
 /*********************

@@ -16,6 +16,13 @@ upon your base.scss styles.
 ******************************************************************/
 
 
+/*********************
+GENERAL STYLES
+*********************/
+
+hr {
+	margin: 3em 0;
+}
 	
 /*********************
 NAVIGATION STYLES
@@ -102,7 +109,14 @@ POSTS & CONTENT STYLES
 /*********************
 FOOTER STYLES
 *********************/
-	
+
+footer address {
+	float: left;
+}
+
+footer ul {
+	float: right;
+}
 /*
 check your menus here. do they look good?
 do they need tweaking?
