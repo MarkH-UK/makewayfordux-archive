@@ -686,6 +686,8 @@ BUTTONS
     color: white;
     border-bottom: .2em solid white;
     font-size: 1.3em; }
+  .nav-collapse li a:hover {
+    color: #fcef77; }
 
 .nav-collapse li:last-child {
   border: none; }
@@ -897,12 +899,12 @@ and more scalable.
   text-indent: -9999px;
   background: url("../images/nav-gray.png") no-repeat scroll 50% 33%; }
 
-.nav {
+.top-nav {
   border-bottom: 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  .nav li {
+  .top-nav li {
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
@@ -910,7 +912,7 @@ and more scalable.
     depend on the project. Here's some great info on it:
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
-    .nav li a {
+    .top-nav li a {
       display: block;
       text-decoration: none;
       padding: 10px 10px;
@@ -921,8 +923,8 @@ and more scalable.
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
+    .top-nav li ul.sub-menu li a,
+    .top-nav li ul.children li a {
       padding-left: 30px; }
 
 /* end .nav */
@@ -940,9 +942,20 @@ TOP SECTION
   #top div {
     margin: auto; }
   #top span {
-    font-size: 2em; }
-  #top p {
+    font-size: 2em;
+    line-height: 1em; }
+  #top p:first-of-type {
     display: inline; }
+
+/*********************
+BLOG SECTION
+*********************/
+.article-header h1 {
+  margin-bottom: 0; }
+
+.byline {
+  margin-top: 0;
+  clear: both; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1248,10 +1261,14 @@ tweeners.
   hr {
     margin: 3em 0; }
 
+  .more-posts {
+    float: right;
+    margin-right: 5em; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
-  .nav li {
+  .top-nav li {
     float: left; }
 
   /* .menu is clearfixed inside mixins.scss */
@@ -1413,7 +1430,7 @@ you can add resource intensive styles.
   *********************/
   h2 {
     float: right;
-    margin-right: 2em; }
+    margin-right: 1em; }
 
   /*********************
   LAYOUT & GRID STYLES
@@ -1430,11 +1447,15 @@ you can add resource intensive styles.
   .sub-content {
     margin-top: 1em; }
 
+  .byline {
+    margin-top: 0;
+    text-align: right;
+    margin-right: 1em; }
+
   /*********************
   NAVIGATION STYLES
   *********************/
   .nav {
-    background: #eee;
     border: 0;
     /* end .menu ul li */
     /* highlight current page */
@@ -1521,6 +1542,9 @@ you can add resource intensive styles.
   /*********************
   FOOTER STYLES
   *********************/
+  footer {
+    margin-bottom: 3em; }
+
   /*
   you'll probably need to do quite a bit
   of overriding here if you styled them for

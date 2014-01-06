@@ -185,7 +185,7 @@ and more scalable.
 	background: url('../images/nav-gray.png') no-repeat scroll 50% 33%;
 }
 
-.nav {
+.top-nav {
 	//border: 1px solid #ccc;
 	border-bottom: 0;
 
@@ -277,12 +277,30 @@ TOP SECTION
 
 	span {
 		font-size: 2em;
+		line-height: 1em;
 	}
 
-	p {
+	p:first-of-type {
 		display: inline;
 	}
 }
+
+/*********************
+BLOG SECTION
+*********************/
+
+.article-header h1 {
+	margin-bottom: 0;
+}
+
+.byline {
+	margin-top: 0;
+	clear: both;
+}
+
+
+
+
 
 /*********************
 POSTS & CONTENT STYLES

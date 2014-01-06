@@ -6,12 +6,6 @@
 							<?php bones_footer_links(); ?>
 					</nav>
 
-					<ul>
-						<li><a href="">Safe Routes to Schools</a></li>
-						<li><a href="">Rails to Trails</a></li>
-						<li><a href="">South Shore Biking</a></li>
-					</ul>
-
 					<address>
 						The Duxbury Sidwalk &amp; Bike Path Committee<br>
 						Town Hall<br>

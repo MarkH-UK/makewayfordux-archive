@@ -320,10 +320,14 @@ GENERAL STYLES
 hr {
   margin: 3em 0; }
 
+.more-posts {
+  float: right;
+  margin-right: 5em; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
-.nav li {
+.top-nav li {
   float: left; }
 
 /* .menu is clearfixed inside mixins.scss */
@@ -397,7 +401,7 @@ GENERAL STYLES
 *********************/
 h2 {
   float: right;
-  margin-right: 2em; }
+  margin-right: 1em; }
 
 /*********************
 LAYOUT & GRID STYLES
@@ -414,11 +418,15 @@ HOME PAGE
 .sub-content {
   margin-top: 1em; }
 
+.byline {
+  margin-top: 0;
+  text-align: right;
+  margin-right: 1em; }
+
 /*********************
 NAVIGATION STYLES
 *********************/
 .nav {
-  background: #eee;
   border: 0;
   /* end .menu ul li */
   /* highlight current page */
@@ -505,6 +513,9 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
+footer {
+  margin-bottom: 3em; }
+
 /*
 you'll probably need to do quite a bit
 of overriding here if you styled them for

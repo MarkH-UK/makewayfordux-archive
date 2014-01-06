@@ -23,12 +23,17 @@ GENERAL STYLES
 hr {
 	margin: 3em 0;
 }
+
+.more-posts {
+	float:right;
+	margin-right: 5em;
+}
 	
 /*********************
 NAVIGATION STYLES
 *********************/
 
-.nav {
+.top-nav {
 	li {
 		float: left;
 	}

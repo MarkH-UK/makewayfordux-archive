@@ -21,13 +21,13 @@ define( 'WPCACHEHOME', '/mnt/stor10-wc1-ord1/831519/871048/makewayfordux.lukehat
 define('DB_NAME', '871048_dux');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', '871048_usr');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'M87S9jr10!@');
+define('DB_PASSWORD', 'M87W9jr10!@db');
 
 /** MySQL hostname */
-define('DB_HOST', 'dux');
+define('DB_HOST', '50.57.219.106');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
