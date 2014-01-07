@@ -718,7 +718,7 @@ BUTTONS
   user-select: none;
   position: absolute;
   top: 20px;
-  right: 20px; }
+  right: 13px; }
 
 @media screen and (min-width: 40em) {
   .js .nav-collapse {
@@ -876,7 +876,7 @@ HEADER STYLES
   font-size: 24px;
   text-transform: capitalize;
   margin-bottom: 0;
-  margin-left: .3em; }
+  margin-left: 12px; }
   #logo a {
     color: #329634; }
 
@@ -915,7 +915,7 @@ and more scalable.
     .top-nav li a {
       display: block;
       text-decoration: none;
-      padding: 10px 10px;
+      padding: 15px 10px 5px;
       border-bottom: 1px solid #ccc;
       /*
       remember this is for mobile ONLY, so there's no need
@@ -931,21 +931,24 @@ and more scalable.
 /*********************
 TOP SECTION
 *********************/
-#top {
+.top {
   width: 100%; }
-  #top img {
+  .top img {
     display: block;
     width: 883px;
     height: auto;
     max-width: 100%;
     margin: 0 auto; }
-  #top div {
+  .top div {
     margin: auto; }
-  #top span {
+  .top span {
     font-size: 2em;
     line-height: 1em; }
-  #top p:first-of-type {
+  .top p:first-of-type {
     display: inline; }
+
+.intro {
+  margin-top: 2em; }
 
 /*********************
 BLOG SECTION
@@ -956,6 +959,12 @@ BLOG SECTION
 .byline {
   margin-top: 0;
   clear: both; }
+
+/*********************
+CONTACT SECTION
+*********************/
+input, textarea {
+  max-width: 275px; }
 
 /*********************
 POSTS & CONTENT STYLES
@@ -1261,9 +1270,15 @@ tweeners.
   hr {
     margin: 3em 0; }
 
+  hr:first-of-type {
+    margin: 2em 0 3em; }
+
   .more-posts {
     float: right;
     margin-right: 5em; }
+
+  input, textarea {
+    max-width: 375px; }
 
   /*********************
   NAVIGATION STYLES

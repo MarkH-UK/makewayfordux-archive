@@ -32,6 +32,7 @@
 .nav-collapse li:last-child{
   border: none;
   a {
+    //border-bottom: 1px solid $duxGreen;
     border: none;
   }
 }
@@ -63,7 +64,7 @@
 
   position: absolute;
   top: 20px;
-  right: 20px;
+  right: 13px;
 }
 
 @media screen and (min-width: 40em) {

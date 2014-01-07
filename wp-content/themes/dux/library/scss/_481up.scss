@@ -24,9 +24,17 @@ hr {
 	margin: 3em 0;
 }
 
+hr:first-of-type {
+	margin: 2em 0 3em;
+}
+
 .more-posts {
 	float:right;
 	margin-right: 5em;
+}
+
+input, textarea {
+	max-width: 375px;
 }
 	
 /*********************

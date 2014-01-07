@@ -12,9 +12,14 @@ Template Name: Home Page
 
 						<div id="main" class="twelvecol clearfix" role="main">
 
-							<section id="top" >
+							<section class="top" >
 								<img id="duxFamily" src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/ducksColor.png" alt="Ducks on bikes" width="883" height="372">
-								<div class="into">
+							</section>
+
+							<hr>
+
+							<section>
+								<div class="intro top">
 									<span><?php the_field('title') ?></span>
 									<?php the_field('intro') ?>
 								</div>

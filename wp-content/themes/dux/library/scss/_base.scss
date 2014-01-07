@@ -158,7 +158,7 @@ HEADER STYLES
 		font-size: 24px;
 		text-transform: capitalize;
 		margin-bottom: 0;
-		margin-left: .3em;
+		margin-left: 12px;
 	}
 
 // allow dropdown menu to fill width of screen
@@ -194,7 +194,7 @@ and more scalable.
 		a {
 			display: block;
 			text-decoration: none;
-			padding: 10px 10px;
+			padding: 15px 10px 5px;
 			//background-color: #eee;
 			border-bottom: 1px solid #ccc;
 
@@ -259,7 +259,7 @@ and more scalable.
 /*********************
 TOP SECTION
 *********************/
-#top {
+.top {
 	width: 100%;
 
 	img {
@@ -285,6 +285,10 @@ TOP SECTION
 	}
 }
 
+.intro {
+	margin-top: 2em;
+}
+
 /*********************
 BLOG SECTION
 *********************/
@@ -298,8 +302,13 @@ BLOG SECTION
 	clear: both;
 }
 
+/*********************
+CONTACT SECTION
+*********************/
 
-
+input, textarea {
+	max-width: 275px;
+}
 
 
 /*********************
